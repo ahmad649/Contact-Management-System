@@ -39,7 +39,7 @@ The **Contact Management System** is a console-based program that allows users t
 
    - For GCC (Linux/MacOS/Windows with MinGW):
 
-      g++ -o contact_management main.cpp
+      g++ -o Contact-management-System.cpp
       ./contact_management
    
    - For Visual Studio (Windows):

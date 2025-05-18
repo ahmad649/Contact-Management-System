@@ -27,77 +27,66 @@ The **Contact Management System** is a console-based program that allows users t
 1. **Clone this repository** to your local machine:
    ```bash
    git clone https://github.com/your-username/contact-management-system.git
-Prepare the Data File:
+2. Prepare the Data File:
 
-Create a text file called sample_data.txt with initial data entries in the following format:
+   - Create a text file called sample_data.txt with initial data entries in the following format:
+      1 John 1234567890 9876543210 123 Main St
+      2 Jane 2345678901 8765432109 456 Oak St
+      3 Mike 3456789012 7654321098 789 Pine St
+     
+3. Compile and run the program:
 
-css
-Copy
-Edit
-1 John 1234567890 9876543210 123 Main St
-2 Jane 2345678901 8765432109 456 Oak St
-3 Mike 3456789012 7654321098 789 Pine St
-Compile and run the program:
+   - For GCC (Linux/MacOS/Windows with MinGW):
 
-For GCC (Linux/MacOS/Windows with MinGW):
+   g++ -o contact_management main.cpp
+   ./contact_management
+   
+   - For Visual Studio (Windows):
 
-bash
-Copy
-Edit
-g++ -o contact_management main.cpp
-./contact_management
-For Visual Studio (Windows):
+      - Open the .cpp file, build, and run the project.
 
-Open the .cpp file, build, and run the project.
+4. Using the System:
 
-Using the System:
+- The program will prompt you with a menu:
 
-The program will prompt you with a menu:
+   1: Insert Data
 
-1: Insert Data
+   2: Search Data
 
-2: Search Data
+   3: Delete Data
 
-3: Delete Data
+   4: Exit
 
-4: Exit
+- Enter the corresponding number for the action you want to perform.
 
-Enter the corresponding number for the action you want to perform.
+- When inserting, you will need to provide a contact's details, and it will be stored in the hash table.
 
-When inserting, you will need to provide a contact's details, and it will be stored in the hash table.
-
-When searching or deleting, you will need to enter the name of the contact.
+- When searching or deleting, you will need to enter the name of the contact.
 
 Example:
 Insert Data:
 
-markdown
-Copy
-Edit
-1. Enter the key of the data entry: 4
-2. Enter the name of the data entry: Alice
-3. Enter the primary contact number: 555-1234
-4. Enter the secondary contact number: 555-5678
-5. Enter the address: 123 Elm St
+   1. Enter the key of the data entry: 4
+   2. Enter the name of the data entry: Alice
+   3. Enter the primary contact number: 555-1234
+   4. Enter the secondary contact number: 555-5678
+   5. Enter the address: 123 Elm St
+      
 Search Data:
 
-pgsql
-Copy
-Edit
-1. Enter the name of the person whose data entry you want to search: Alice
-2. The data entry you wished to find is located!
+   Enter the name of the person whose data entry you want to search: Alice
+   The data entry you wished to find is located!
    Key = 4
    Name = Alice
    Primary Contact Number = 555-1234
    Secondary Contact Number = 555-5678
    Address = 123 Elm St
+   
 Delete Data:
 
-pgsql
-Copy
-Edit
-1. Enter the name of the person whose data entry you want to delete: Alice
-2. The data corresponding to the name you entered is successfully deleted from the database!
+   Enter the name of the person whose data entry you want to delete: Alice
+   The data corresponding to the name you entered is successfully deleted from the database!
+   
 Code Overview
 Key Functions:
 Insert: Adds a new contact to the hash table by calculating the hash value of the name and using it to determine the index in the table.
@@ -124,27 +113,18 @@ Secondary Contact: An optional secondary phone number.
 Address: The contact's address.
 
 Contributing
-Fork this repository.
+1. Fork this repository.
 
-Create a new branch:
+2. Create a new branch:
+      git checkout -b feature-name
 
-bash
-Copy
-Edit
-git checkout -b feature-name
-Commit your changes:
+3. Commit your changes:
+      git commit -am 'Add new feature'
 
-bash
-Copy
-Edit
-git commit -am 'Add new feature'
-Push to the branch:
+4. Push to the branch:
+      git push origin feature-name
+   
+5. Open a pull request.
 
-bash
-Copy
-Edit
-git push origin feature-name
-Open a pull request.
-
-License
+#License
 This project is open-source and available under the MIT License.

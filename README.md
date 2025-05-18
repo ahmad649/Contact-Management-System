@@ -26,20 +26,20 @@ The **Contact Management System** is a console-based program that allows users t
 
 1. **Clone this repository** to your local machine:
    ```bash
-   git clone https://github.com/your-username/contact-management-system.git
+      git clone https://github.com/your-username/contact-management-system.git
 2. Prepare the Data File:
 
    - Create a text file called sample_data.txt with initial data entries in the following format:
-      1 John 1234567890 9876543210 123 Main St
-      2 Jane 2345678901 8765432109 456 Oak St
-      3 Mike 3456789012 7654321098 789 Pine St
+      - 1 John 1234567890 9876543210 123 Main St
+      - 2 Jane 2345678901 8765432109 456 Oak St
+      - 3 Mike 3456789012 7654321098 789 Pine St
      
 3. Compile and run the program:
 
    - For GCC (Linux/MacOS/Windows with MinGW):
 
-   g++ -o contact_management main.cpp
-   ./contact_management
+      g++ -o contact_management main.cpp
+      ./contact_management
    
    - For Visual Studio (Windows):
 
@@ -63,8 +63,9 @@ The **Contact Management System** is a console-based program that allows users t
 
 - When searching or deleting, you will need to enter the name of the contact.
 
-Example:
-Insert Data:
+## Example:
+
+- Insert Data:
 
    1. Enter the key of the data entry: 4
    2. Enter the name of the data entry: Alice
@@ -72,7 +73,7 @@ Insert Data:
    4. Enter the secondary contact number: 555-5678
    5. Enter the address: 123 Elm St
       
-Search Data:
+- Search Data:
 
    Enter the name of the person whose data entry you want to search: Alice
    The data entry you wished to find is located!
@@ -82,37 +83,40 @@ Search Data:
    Secondary Contact Number = 555-5678
    Address = 123 Elm St
    
-Delete Data:
+- Delete Data:
 
    Enter the name of the person whose data entry you want to delete: Alice
    The data corresponding to the name you entered is successfully deleted from the database!
    
-Code Overview
-Key Functions:
-Insert: Adds a new contact to the hash table by calculating the hash value of the name and using it to determine the index in the table.
+## Code Overveiw
 
-Search: Looks for a contact by their name. If the name exists, the program displays the associated contact details.
+- Key Functions:
 
-Delete: Removes a contact's details from the hash table by name.
+**Insert**: Adds a new contact to the hash table by calculating the hash value of the name and using it to determine the index in the table.
 
-Hashing:
-The hash function (hashing_function) generates a key from the contact's name and maps it to an index in the table using mapping_function.
+**Search**: Looks for a contact by their name. If the name exists, the program displays the associated contact details.
 
-Example:
+**Delete**: Removes a contact's details from the hash table by name.
+
+**Hashing**: The hash function (hashing_function) generates a key from the contact's name and maps it to an index in the table using mapping_function.
+
+### Example:
+
 Contact Data Format:
+
 The contact information is stored as:
 
-Key: A unique identifier for each contact (usually a number).
+**Key**: A unique identifier for each contact (usually a number).
 
-Name: The contact's full name.
+**Name**: The contact's full name.
 
-Primary Contact: The primary phone number.
+**Primary Contact**: The primary phone number.
 
-Secondary Contact: An optional secondary phone number.
+**Secondary Contact**: An optional secondary phone number.
 
-Address: The contact's address.
+**Address**: The contact's address.
 
-Contributing
+## Contributing
 1. Fork this repository.
 
 2. Create a new branch:

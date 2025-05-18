@@ -30,9 +30,10 @@ The **Contact Management System** is a console-based program that allows users t
 2. Prepare the Data File:
 
    - Create a text file called sample_data.txt with initial data entries in the following format:
-      - 1 John 1234567890 9876543210 123 Main St
-      - 2 Jane 2345678901 8765432109 456 Oak St
-      - 3 Mike 3456789012 7654321098 789 Pine St
+   
+         1 John 1234567890 9876543210 123 Main St
+         2 Jane 2345678901 8765432109 456 Oak St
+         3 Mike 3456789012 7654321098 789 Pine St
      
 3. Compile and run the program:
 

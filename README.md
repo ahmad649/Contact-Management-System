@@ -106,15 +106,15 @@ Contact Data Format:
 
    The contact information is stored as:
 
-      **Key**: A unique identifier for each contact (usually a number).
+   **Key**: A unique identifier for each contact (usually a number).
 
-      **Name**: The contact's full name.
+   **Name**: The contact's full name.
 
-      **Primary Contact**: The primary phone number.
+   **Primary Contact**: The primary phone number.
 
-      **Secondary Contact**: An optional secondary phone number.
+   **Secondary Contact**: An optional secondary phone number.
 
-      **Address**: The contact's address.
+   **Address**: The contact's address.
 
 ## Contributing
 

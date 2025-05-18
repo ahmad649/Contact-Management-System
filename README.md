@@ -92,43 +92,44 @@ The **Contact Management System** is a console-based program that allows users t
 
 - Key Functions:
 
-**Insert**: Adds a new contact to the hash table by calculating the hash value of the name and using it to determine the index in the table.
+   **Insert**: Adds a new contact to the hash table by calculating the hash value of the name and using it to determine the index in the table.
 
-**Search**: Looks for a contact by their name. If the name exists, the program displays the associated contact details.
+   **Search**: Looks for a contact by their name. If the name exists, the program displays the associated contact details.
 
-**Delete**: Removes a contact's details from the hash table by name.
+   **Delete**: Removes a contact's details from the hash table by name.
 
-**Hashing**: The hash function (hashing_function) generates a key from the contact's name and maps it to an index in the table using mapping_function.
+   **Hashing**: The hash function (hashing_function) generates a key from the contact's name and maps it to an index in the table using mapping_function.
 
 ### Example:
 
 Contact Data Format:
 
-The contact information is stored as:
+   The contact information is stored as:
 
-**Key**: A unique identifier for each contact (usually a number).
+      **Key**: A unique identifier for each contact (usually a number).
 
-**Name**: The contact's full name.
+      **Name**: The contact's full name.
 
-**Primary Contact**: The primary phone number.
+      **Primary Contact**: The primary phone number.
 
-**Secondary Contact**: An optional secondary phone number.
+      **Secondary Contact**: An optional secondary phone number.
 
-**Address**: The contact's address.
+      **Address**: The contact's address.
 
 ## Contributing
-1. Fork this repository.
 
-2. Create a new branch:
+   1. Fork this repository.
+
+   2. Create a new branch:
       git checkout -b feature-name
 
-3. Commit your changes:
+   3. Commit your changes:
       git commit -am 'Add new feature'
 
-4. Push to the branch:
+   4. Push to the branch:
       git push origin feature-name
    
-5. Open a pull request.
+   5. Open a pull request.
 
 ## License
-This project is open-source and available under the MIT License.
+   This project is open-source and available under the MIT License.
